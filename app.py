@@ -1,12 +1,4 @@
-from flask import Flask
-
-app = Flask(__name__)
-
-
-@app.route('/')
-def hello_world():
-    return 'Hello World!'
-
+from src.controller import app  # Importamos 'app' desde controller.py
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)  # Ejecutamos la app
