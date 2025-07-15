@@ -18,6 +18,3 @@ class Usuario:
 
     def recibirMensaje(self, mensaje):
         self.mensajesRecibidos.append(mensaje)
-
-    def verHistorialMensajes(self):
-        return [msg.contenido for msg in self.mensajesRecibidos]

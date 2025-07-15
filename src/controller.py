@@ -45,7 +45,7 @@ def enviar_mensaje():
 # Ruta GET: Obtener los mensajes recibidos por un usuario
 @app.route('/mensajeria/recibidos', methods=['GET'])
 def get_mensajes_recibidos():
-    mialias = request.args.get('mialias')  # Obtener el alias del usuario desde los parámetros
+    mialias = request.args.get('mialias')  # Obtener el alias del usuario desde los parametros
     usuario = data_handler.get_usuario(mialias)  # Buscar al usuario por alias
 
     if usuario:

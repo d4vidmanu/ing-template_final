@@ -6,4 +6,5 @@ class Contacto:
         self.fechaRegistro = datetime.now()  # Fecha de registro del contacto
 
     def __str__(self):
-        return f"Contacto: {self.alias}, Fecha de Registro: {self.fechaRegistro}"
+        # Cambiar el formato de la fecha para solo mostrar día/mes/año
+        return f"Contacto: {self.alias}, Fecha de Registro: {self.fechaRegistro.strftime('%d/%m/%Y')}"
