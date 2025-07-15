@@ -20,7 +20,7 @@ def get_contactos():
     return jsonify({"error": "Usuario no encontrado"}), 404
 
 
-# Ruta POST: Añadir un contacto a un usuario
+# Ruta POST: Aniadir un contacto a un usuario
 @app.route('/mensajeria/contactos/<alias>', methods=['POST'])
 def add_contacto(alias):
     data = request.get_json()
@@ -28,7 +28,7 @@ def add_contacto(alias):
     usuario = data_handler.get_usuario(alias)
     if usuario:
         new_contact = data_handler.agregar_contacto(alias, contacto)
-        return jsonify({"message": f"Contacto {contacto} añadido"}), 201
+        return jsonify({"message": f"Contacto {contacto} aniadido"}), 201
     return jsonify({"error": "Usuario no encontrado"}), 404
 
 # Ruta POST: Enviar un mensaje de un usuario a otro

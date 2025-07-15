@@ -1,4 +1,4 @@
-from src.controller import app  # Importamos 'app' desde controller.py
+from src.controller import app
 
 if __name__ == '__main__':
-    app.run(debug=True)  # Ejecutamos la app
+    app.run(debug=True)
